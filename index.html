@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sawyer's Movies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#">Sawyer's Movies</a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#genres">Genres</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div>
+        <p class="eyebrow">YOUR PERSONAL MOVIE CATALOG</p>
+        <h1>Find your next movie.</h1>
+        <p class="hero-copy">Browse your collection, search by title, and keep everything organized in one place.</p>
+        <a class="button" href="#movies">Browse Movies</a>
+      </div>
+    </section>
+
+    <section class="wrap toolbar" id="movies">
+      <div>
+        <h2>Movies</h2>
+        <p id="count">0 titles</p>
+      </div>
+      <input id="search" type="search" placeholder="Search movies..." aria-label="Search movies">
+    </section>
+
+    <section class="wrap">
+      <div id="movieGrid" class="movie-grid"></div>
+      <p id="empty" class="empty" hidden>No movies match your search.</p>
+    </section>
+
+    <section class="wrap genres" id="genres">
+      <h2>Genres</h2>
+      <div class="genre-list">
+        <button data-genre="all">All</button>
+        <button data-genre="Animation">Animation</button>
+        <button data-genre="Action">Action</button>
+        <button data-genre="Comedy">Comedy</button>
+        <button data-genre="Family">Family</button>
+        <button data-genre="Horror">Horror</button>
+        <button data-genre="Sci-Fi">Sci-Fi</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© 2026 Sawyer's Movies</div>
+  </footer>
+  <script src="movies.js"></script>
+</body>
+</html>
